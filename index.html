@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventori Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aplikasi Inventori Barang</h1>
+    
+    <!-- Form Tambah Barang Baru -->
+    <section id="add-item">
+        <h2>Tambah Barang Baru</h2>
+        <input type="text" id="item-name" placeholder="Nama Barang" required>
+        <input type="text" id="item-desc" placeholder="Deskripsi" required>
+        <input type="number" id="initial-stock" placeholder="Stok Awal" min="0" required>
+        <button onclick="addItem()">Tambah Barang</button>
+    </section>
+    
+    <!-- Form Catat Masuk/Keluar -->
+    <section id="transaction">
+        <h2>Catat Transaksi</h2>
+        <select id="item-select">
+            <option value="">Pilih Barang</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Jumlah" min="1" required>
+        <button onclick="recordIn()">Barang Masuk</button>
+        <button onclick="recordOut()">Barang Keluar</button>
+    </section>
+    
+    <!-- Daftar Barang -->
+    <section id="item-list">
+        <h2>Daftar Barang</h2>
+        <div id="items"></div>
+    </section>
+    
+    <!-- Log Transaksi -->
+    <section id="log">
+        <h2>Log Transaksi</h2>
+        <div id="transaction-log"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff; /* Biru muda untuk kesan unik */
+    color: #333;
+}
+
+h1, h2 {
+    color: #228b22; /* Hijau gelap */
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #228b22;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #32cd32;
+}
+
+#items div, #transaction-log div {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.error {
+    color: red;
+}
